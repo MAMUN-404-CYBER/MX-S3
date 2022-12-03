@@ -1,2 +1,5 @@
-import MX_S3
-MX_S3.RMX()
+import os, sys
+try:
+    __import__("MX_S3").RMX()
+except Exception as e:
+    exit(str(e))
